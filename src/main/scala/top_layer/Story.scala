@@ -9,7 +9,7 @@ case object Story{
   def apply[A] = new Story[A](Nil)
 
 
-  def runStory[A](story:Story[A], character: A) : A = EventExecutor.update(character, story)
+  def runStory[A](story:Story[A], character: A) : A = SideEffectGraph.update(character, story)
 
 
 }
@@ -23,5 +23,5 @@ case class Story[A](eventStack:List[(A) => Event]){
 
   def andThen[B](eventFn: A => Event) : Story[A] = copy(eventStack = eventFn :: eventStack)
 
-  def andThen[B](eventFns: A => List[Event]): Story[A] = 
+  def andThen[B](eventFns: A => List[Event]): Story[A] =
 }

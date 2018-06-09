@@ -3,11 +3,17 @@ package events
 import domain_models._
 import utils.{Constants, MoneyUtils}
 
+trait SideEffect extends Event
+
 trait Event{
   val name: String = this.getClass.toString
 }
 
 case object NoEventNeeded extends Event
+
+trait VendingMachineEvent extends Event {
+  def run(vendingMachine: VendingMachine): VendingMachine
+}
 
 trait CoinReturnEvent extends Event {
   def run(coinReturn: CoinReturn): CoinReturn
