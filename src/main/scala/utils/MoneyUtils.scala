@@ -1,28 +1,30 @@
 package utils
 
+import java.text.NumberFormat
+
 object MoneyUtils {
 
-
-  def moneyToBigDec(money: String): BigDecimal = BigDecimal(money.replace("$", ""))
+  def moneyToBigDec(money: String): BigDecimal = {
+    BigDecimal(NumberFormat.getCurrencyInstance.parse(money).byteValue())
+//    BigDecimal(money.replace("$", ""))
+  }
 
   def addMoneyStrings(moneyValues: List[String]): String = {
-    val moneyRegex = """\$(\d+)*\.(\d)(\d)""".r
-
+    val moneyRegex = """\$(-?\d*\.\d\d$)""".r
 
     "$" +
       moneyValues
-        .map {
-          case moneyRegex(null, tenth, one) =>
-            s".$tenth$one"
-          case moneyRegex(dollars, tenth, one) =>
-            s"$dollars.$tenth$one"
-          case _ =>
-            ""
+        .flatMap {
+          case moneyRegex(amount) => Some(BigDecimal(amount))
+          case _ => None
         }
-        .filterNot(_ == "")
-        .map(BigDecimal(_))
         .sum
-        .toString()
+        .toString
+  }
+
+
+  def currencyOf(amount: BigDecimal): String = {
+    NumberFormat.getCurrencyInstance().format(amount)
   }
 
 }

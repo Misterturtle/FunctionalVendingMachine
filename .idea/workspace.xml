@@ -2,49 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21dc24f-db6c-4c26-a222-e4fe822a3a25" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/CoinHolder.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/Display.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/events/Events.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/top_layer/Story.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/DisplayTests.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/CoinReturn.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/Dispenser.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/Item.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/utils/Constants.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/DispenserTests.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/utils/CoinReturnTests.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/utils/MoneyUtilsTest.scala" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Utils.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/VendingMachine.scala" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/VendingMachineTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CoinHolder$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CoinHolder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/CoinHolderEvent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Display$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Display.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/DisplayChecked$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/DisplayChecked.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/DisplayEvent.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Event.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/EventExecutor$$anonfun$update$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/EventExecutor$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/EventExecutor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/MoneyUtils$$anonfun$addMoneyStrings$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/MoneyUtils$$anonfun$addMoneyStrings$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/MoneyUtils$$anonfun$addMoneyStrings$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/MoneyUtils$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/MoneyUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NickelInserted$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NickelInserted.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Story$$anonfun$$plus$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Story$$anonfun$andThen$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Story$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Story.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/VendingMachine$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/VendingMachine.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/VendingMachineAPI$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/VendingMachineAPI.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/VendingMachineTest$$anonfun$1$$anonfun$apply$mcV$sp$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/VendingMachineTest$$anonfun$1$$anonfun$apply$mcV$sp$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/VendingMachineTest$$anonfun$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/VendingMachineTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala" afterPath="$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/events/Events.scala" afterPath="$PROJECT_DIR$/src/main/scala/events/Events.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala" afterPath="$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/top_layer/Story.scala" afterPath="$PROJECT_DIR$/src/main/scala/top_layer/Story.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala" afterPath="$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/DisplayTests.scala" afterPath="$PROJECT_DIR$/src/test/scala/DisplayTests.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,12 +52,88 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="VendingMachine.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+            <state relative-caret-position="237">
+              <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+              <folding>
+                <element signature="e#23#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Events.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/events/Events.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding>
+                <element signature="e#16#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventExecutor.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinReturnTests.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/utils/CoinReturnTests.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+              <folding>
+                <element signature="e#15#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/utils/Constants.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinHolderTests.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DispenserTests.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/DispenserTests.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinReturn.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/CoinReturn.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -95,87 +143,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/CoinHolder.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/Display.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Events.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/events/Events.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="47" column="3" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-              <folding>
-                <element signature="e#16#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Story.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Story.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/top_layer/Story.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="94" lean-forward="false" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
-              <folding>
-                <element signature="e#19#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventExecutor.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#19#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoinHolderTests.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisplayTests.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/DisplayTests.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoneyUtils.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="330">
+              <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -188,6 +166,7 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="ScalaTest Class" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -196,9 +175,31 @@
       <find>EventRunner</find>
       <find>\$(\d+)*\.(\d)(\d)</find>
       <find>\$(\d+)*?\.(\d)(\d)</find>
+      <find>\$(-)?(\d+)*?\.(\d)(\d)</find>
+      <find>e\.is</find>
+      <find>(vendingMachine: VendingMachine): Event</find>
+      <find>def</find>
+      <find>_)</find>
+      <find>(vm)</find>
+      <find>Story()</find>
+      <find>(emptyVM))</find>
+      <find>Event</find>
+      <find>\$(-?\d*\.\d\d)</find>
+      <find>\$(-?\d*\.\d\d$)</find>
+      <find>(-)?(\d+)*?\.(\d)(\d)</find>
+      <find>EventEx</find>
+      <find>STARTING_DISPLAY</find>
+      <find>insertQU</find>
     </findStrings>
     <replaceStrings>
       <replace>Story</replace>
+      <replace>event\.is</replace>
+      <replace>: VendingMachine =&gt; Event</replace>
+      <replace>val</replace>
+      <replace>Story[VendingMachine]</replace>
+      <replace>)</replace>
+      <replace>Constants.PRICE_OF_CHIPS</replace>
+      <replace>Constants.INSERT_COIN</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -222,12 +223,20 @@
         <option value="$PROJECT_DIR$/src/main/scala/domain_models/Display.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/VendingMachine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/utils/Utils.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/utils/MoneyUtilsTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/domain_models/Dispenser.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/DispenserTests.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/domain_models/Item.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/DisplayTests.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/utils/Constants.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/domain_models/CoinReturn.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/events/Events.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/top_layer/Story.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/utils/CoinReturnTests.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/DisplayTests.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/top_layer/Story.scala" />
       </list>
     </option>
   </component>
@@ -237,7 +246,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1122" />
@@ -259,7 +268,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,6 +298,30 @@
               <item name="FunctionalVendingMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="FunctionalVendingMachine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="domain_models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FunctionalVendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalVendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FunctionalVendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalVendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FunctionalVendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalVendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,12 +331,20 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FunctionalVendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalVendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,10 +353,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="utils" />
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="utils" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="org.scalatest.FunSuite" />
@@ -383,10 +429,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="CoinHolderTests" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="CoinReturnTests" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="functionalvendingmachine" />
-      <setting name="path" value="CoinHolderTests" />
+      <setting name="path" value="utils.CoinReturnTests" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -396,9 +442,24 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Class" />
-      <setting name="path" value="CoinHolderTests" />
+      <setting name="path" value="utils.CoinReturnTests" />
     </configuration>
-    <configuration name="DisplayTests.When inserting a nickel The display shows $0.05" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="DisplayTests" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="functionalvendingmachine" />
+      <setting name="path" value="DisplayTests" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="DisplayTests" />
+    </configuration>
+    <configuration name="DisplayTests.Given the exact amount has been inserted for chips, when selecting chips After checking the display, the display should be INSERT COIN" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="functionalvendingmachine" />
       <setting name="path" value="DisplayTests" />
@@ -412,7 +473,23 @@
       <envs />
       <setting name="testKind" value="Test name" />
       <setting name="path" value="DisplayTests" />
-      <setting name="testName" value="When inserting a nickel The display shows $0.05" />
+      <setting name="testName" value="Given the exact amount has been inserted for chips, when selecting chips After checking the display, the display should be INSERT COIN" />
+    </configuration>
+    <configuration name="DisplayTests.Given there is not enough money in the vendingMachine, when selecting chips Given no money has been inserted Checking the display after selecting chips changes display" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="functionalvendingmachine" />
+      <setting name="path" value="DisplayTests" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="DisplayTests" />
+      <setting name="testName" value="Given there is not enough money in the vendingMachine, when selecting chips Given no money has been inserted Checking the display after selecting chips changes display" />
     </configuration>
     <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -429,38 +506,12 @@
       <setting name="testKind" value="All in package" />
       <setting name="package" value="" />
       <buffered bufClass="CoinHolderTests" />
+      <buffered bufClass="DispenserTests" />
       <buffered bufClass="DisplayTests" />
-    </configuration>
-    <configuration name="VendingMachineTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="functionalvendingmachine" />
-      <setting name="path" value="VendingMachineTest" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="VendingMachineTest" />
-    </configuration>
-    <configuration name="VendingMachineTest.When inserting a nickel Checking the display shows $.05" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="functionalvendingmachine" />
-      <setting name="path" value="VendingMachineTest" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="VendingMachineTest" />
-      <setting name="testName" value="When inserting a nickel Checking the display shows $.05" />
+      <buffered bufClass="utils.CoinReturnTests" />
+      <buffered bufClass="utils.CoinReturnTests" />
+      <buffered bufClass="utils.MoneyUtilsTest" />
+      <buffered bufClass="utils.MoneyUtilsTest" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -496,19 +547,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.VendingMachineTest" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.VendingMachineTest.When inserting a nickel Checking the display shows $.05" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.DisplayTests.When inserting a nickel The display shows $0.05" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.ScalaTests in 'scala'" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CoinHolderTests" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.ScalaTests in 'scala'" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.DisplayTests" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.DisplayTests.Given there is not enough money in the vendingMachine, when selecting chips Given no money has been inserted Checking the display after selecting chips changes display" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.DisplayTests.Given the exact amount has been inserted for chips, when selecting chips After checking the display, the display should be INSERT COIN" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CoinReturnTests" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="ScalaTest.ScalaTests in 'scala'" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CoinHolderTests" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.DisplayTests.When inserting a nickel The display shows $0.05" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.VendingMachineTest" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.VendingMachineTest.When inserting a nickel Checking the display shows $.05" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CoinReturnTests" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.DisplayTests.Given the exact amount has been inserted for chips, when selecting chips After checking the display, the display should be INSERT COIN" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.DisplayTests" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.DisplayTests.Given there is not enough money in the vendingMachine, when selecting chips Given no money has been inserted Checking the display after selecting chips changes display" />
       </list>
     </recent_temporary>
   </component>
@@ -560,79 +611,80 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528323590929</updated>
-      <workItem from="1528323598751" duration="23259000" />
+      <workItem from="1528323598751" duration="31379000" />
+      <workItem from="1528428248925" duration="29111000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 39m 06s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CoinReturnTests - 2018.06.09 at 13h 48m 32s.xml">
+      <configuration name="CoinReturnTests" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 40m 30s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="DisplayTests_Given_the_exact_amount_has_been_inserted_for_chips,_when_selecting_chips_After_checking_the_display,_the_display_should_be_INSERT_COIN - 2018.06.09 at 12h 58m 38s.xml">
+      <configuration name="DisplayTests.Given the exact amount has been inserted for chips, when selecting chips After checking the display, the display should be INSERT COIN" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 41m 37s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="DisplayTests_Given_the_exact_amount_has_been_inserted_for_chips,_when_selecting_chips_After_checking_the_display,_the_display_should_be_INSERT_COIN - 2018.06.09 at 13h 03m 49s.xml">
+      <configuration name="DisplayTests.Given the exact amount has been inserted for chips, when selecting chips After checking the display, the display should be INSERT COIN" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 41m 58s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 42m 06s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 43m 21s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="CoinHolderTests - 2018.06.07 at 00h 43m 37s.xml">
-      <configuration name="CoinHolderTests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="ScalaTests_in_'scala' - 2018.06.07 at 00h 43m 46s.xml">
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 12h 54m 12s.xml">
       <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'scala' - 2018.06.07 at 00h 45m 50s.xml">
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 12h 54m 47s.xml">
       <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'scala' - 2018.06.07 at 09h 08m 42s.xml">
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 12h 55m 56s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 12h 57m 47s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 12h 57m 50s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 13h 00m 06s.xml">
+      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ScalaTests_in_'scala' - 2018.06.09 at 13h 48m 43s.xml">
       <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23259000" />
+    <option name="totallyTimeSpent" value="60490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1122" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20021299" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23661149" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09850905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39922103" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3164557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17518637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26387537" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23661149" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -644,16 +696,126 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="36" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="ScalaTestRunConfiguration">
+        <watch expression="EventExecutor.history" language="Scala" custom="top_layer.EventExecutor" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>Constants.THANK_YOU</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>EventExecutor.history</expression-string>
+        <language-id>Scala</language-id>
+        <custom-info>top_layer.EventExecutor</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>EventExecutor.history.foreach(println)</expression-string>
+        <language-id>Scala</language-id>
+        <custom-info>top_layer.EventExecutor</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/events/Events.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <folding>
+            <element signature="e#16#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/DispenserTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/Dispenser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/Item.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/DisplayTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/utils/MoneyUtilsTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/collection/mutable/BufferLike.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="155" column="6" lean-forward="false" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,23 +823,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="207" column="6" lean-forward="false" selection-start-line="207" selection-start-column="6" selection-end-line="207" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/VendingMachineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/VendingMachineTest.java" />
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/PartialFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="85" column="15" lean-forward="false" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,30 +846,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="200" column="6" lean-forward="false" selection-start-line="200" selection-start-column="6" selection-end-line="200" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/events/CoinHolderEvent.scala" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/utils/MoneyUtilsTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/events/CoinHolderEvent.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/utils/package.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/Item.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8u152-zulu/src.zip!/java/text/NumberFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="380" column="18" lean-forward="false" selection-start-line="380" selection-start-column="18" selection-end-line="380" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.6-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/utils/MoneyUtils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/CoinHolder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -724,66 +894,112 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/Display.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/DisplayTests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        <state relative-caret-position="505">
+          <caret line="103" column="51" lean-forward="false" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/Dispenser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/DispenserTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/CoinHolder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/CoinReturn.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/utils/Constants.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/events/Events.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="47" column="3" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+        <state relative-caret-position="389">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="e#16#58#0" expanded="true" />
+            <element signature="e#16#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/domain_models/VendingMachine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/utils/CoinReturnTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/CoinHolderTests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/top_layer/EventExecutor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#77#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="454">
+          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/top_layer/Story.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="94" lean-forward="false" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
-          <folding>
-            <element signature="e#19#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/DisplayTests.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

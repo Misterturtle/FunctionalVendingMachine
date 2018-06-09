@@ -14,7 +14,7 @@ class CoinHolderTests extends FreeSpec with Matchers {
   "When inserting a nickel" - {
 
 
-    val s1 = Story().first(insertNickel(emptyVM))
+    val s1 = Story[VendingMachine].first(insertNickel)
 
     "The coinHolder should have 5 cents" in {
       val result = Story.runStory(s1, emptyVM)
@@ -25,24 +25,24 @@ class CoinHolderTests extends FreeSpec with Matchers {
 
   "When inserting a dime The coinHolder should have 10 cents" in {
 
-    val s1 = Story().first(insertDime(emptyVM))
+    val s1 = Story[VendingMachine].first(insertDime)
     val result = Story.runStory(s1, emptyVM)
 
     result.coinHolder.amount shouldBe .1
   }
 
   "When inserting a quarter The coinHolder should have 25 cents" in {
-    val s1 = Story().first(insertQuarter(emptyVM))
+    val s1 = Story[VendingMachine].first(insertQuarter)
     val result = Story.runStory(s1, emptyVM)
 
     result.coinHolder.amount shouldBe .25
   }
 
   "When inserting 3 dimes The coinHolder should have 30 cents" in {
-    val s1 = Story()
-      .first(insertDime(emptyVM))
-      .andThen(insertDime(emptyVM))
-      .andThen(insertDime(emptyVM))
+    val s1 = Story[VendingMachine]
+      .first(insertDime)
+      .andThen(insertDime)
+      .andThen(insertDime)
 
     val result = Story.runStory(s1, emptyVM)
 
