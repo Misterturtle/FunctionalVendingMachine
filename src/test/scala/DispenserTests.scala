@@ -1,4 +1,4 @@
-import domain_models.{Chips, Cola, VendingMachine}
+import domain_models._
 import org.scalatest.{FreeSpec, Matchers}
 import top_layer.Story
 
@@ -10,15 +10,14 @@ class DispenserTests extends FreeSpec with Matchers {
 
   "When enough money has been inserted" - {
 
-    val parentStory =
-      Story[VendingMachine]
-        .first(insertQuarter)
-      .andThen(insertQuarter)
-      .andThen(insertQuarter)
-      .andThen(insertQuarter)
+    val parentStory = Story()
+      .first(insertCoin(Quarter))
+      .andThen(insertCoin(Quarter))
+      .andThen(insertCoin(Quarter))
+      .andThen(insertCoin(Quarter))
 
     "Selecting chips should put chips in the dispenser" in {
-      val localStory = parentStory.andThen(selectChips)
+      val localStory = parentStory.andThen(selectItem(Chips))
 
       val result = Story.runStory(localStory, vm)
 
@@ -26,7 +25,7 @@ class DispenserTests extends FreeSpec with Matchers {
     }
 
     "Selecting cola should put cola in the dispenser" in {
-      val localStory = parentStory.andThen(selectCola)
+      val localStory = parentStory.andThen(selectItem(Cola))
 
       val result = Story.runStory(localStory, vm)
 
@@ -34,7 +33,7 @@ class DispenserTests extends FreeSpec with Matchers {
     }
 
     "Selecting cola should put candy in the dispenser" in {
-      val localStory = parentStory.andThen(selectCola)
+      val localStory = parentStory.andThen(selectItem(Cola))
 
       val result = Story.runStory(localStory, vm)
 
@@ -44,7 +43,7 @@ class DispenserTests extends FreeSpec with Matchers {
 
   "When not enough money has been inserted" - {
     "Selecting chips should not add anything to the dispenser" in {
-      val localStory = Story[VendingMachine].first(selectChips)
+      val localStory = Story().first(selectItem(Chips))
 
       val result = Story.runStory(localStory, vm)
 
@@ -52,7 +51,7 @@ class DispenserTests extends FreeSpec with Matchers {
     }
 
     "Selecting cola should not add anything to the dispenser" in {
-      val localStory = Story[VendingMachine].first(selectCola)
+      val localStory = Story().first(selectItem(Cola))
 
       val result = Story.runStory(localStory, vm)
 
@@ -60,7 +59,7 @@ class DispenserTests extends FreeSpec with Matchers {
     }
 
     "Selecting candy should not add anything to the dispenser" in {
-      val localStory = Story[VendingMachine].first(selectCandy)
+      val localStory = Story().first(selectItem(Candy))
 
       val result = Story.runStory(localStory, vm)
 
