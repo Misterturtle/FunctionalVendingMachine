@@ -1,32 +1,26 @@
-import events.{Event, ModifyEventTree}
+import events.{Event, ModifyNode}
 import org.scalatest.{FreeSpec, Matchers}
-import tree.EventTree
+import tree.{EventTree, Node}
 
 class EventTest extends FreeSpec with Matchers {
 
   "I want an event" in {
-    val event = new Event() {
-      override def run(eventTree: EventTree): EventTree = ???
-    }
+    val event = ModifyNode
     event shouldNot be (null)
   }
 
   "Events are single units of execution" in {
-    val eventTree = EventTree()
-    val event = new Event{
-      def run(eventTree: EventTree):EventTree = {
-        eventTree.counter += 1
-        eventTree
-      }
-    }
+    val node = Node(5)
+    val event = ModifyNode
 
-    event.run(eventTree).counter shouldBe 1
+
+    event.run(node).something shouldBe 6
   }
 
-  "Events modify an EventTree" in {
-    val eventTree = EventTree()
-    val event = ModifyEventTree
+  "Events modify a node on the EventTree" in {
+    val node = Node(1)
+    val event = ModifyNode
 
-    event.run(eventTree).counter shouldBe 1
+    event.run(node).something shouldBe Node(2)
   }
 }

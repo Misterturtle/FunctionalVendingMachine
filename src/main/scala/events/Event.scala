@@ -1,9 +1,9 @@
 package events
 
-import tree.EventTree
+import tree.{EventTree, Node}
 
 object Event {
 }
 trait Event {
-  def run(eventTree: EventTree):EventTree
+  def run(node: Node):Node
 }

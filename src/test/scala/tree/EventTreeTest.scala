@@ -18,5 +18,4 @@ class EventTreeTest extends FreeSpec with Matchers {
 
     tree.nodes shouldBe List(node)
   }
-
 }
