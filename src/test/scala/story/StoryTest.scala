@@ -8,7 +8,7 @@ import tree.nodes.Leaf
 class StoryTest extends FreeSpec with Matchers {
 
   case class TestLeaf() extends Leaf {
-    override var something: Int = 1
+    override var something: Int = 0
   }
 
   "A story can collect events" in {
@@ -25,11 +25,11 @@ class StoryTest extends FreeSpec with Matchers {
     val story = Story()
       .first(DoubleFoo)
 
-    story.run(leaf).something shouldBe 2
+    story.run(leaf).something shouldBe 1
   }
 
   "A story can run events in order" in {
-    var firstEventTime:Long = 0
+    var firstEventTime: Long = 0
     var secondEventTime: Long = 0
 
     case class FirstEvent() extends Event {
@@ -53,9 +53,35 @@ class StoryTest extends FreeSpec with Matchers {
 
     story.run(TestLeaf())
 
-    firstEventTime shouldNot be (0l)
-    secondEventTime shouldNot be (0l)
+    firstEventTime shouldNot be(0l)
+    secondEventTime shouldNot be(0l)
     firstEventTime < secondEventTime shouldBe true
+  }
+
+  "A story can pass the leaf onto the next event" in {
+    case class FirstEvent() extends Event {
+      override def run(leaf: Leaf) = {
+        leaf.something += 1
+        leaf
+      }
+    }
+
+    case class SecondEvent() extends Event {
+      def run(leaf: Leaf): Leaf = {
+        leaf.something += 1
+        leaf
+      }
+    }
+
+    val story = Story()
+      .first(FirstEvent())
+      .andThen(SecondEvent())
+
+    val leaf = TestLeaf()
+
+    story.run(leaf)
+
+    leaf.something shouldBe 2
   }
 
 }
