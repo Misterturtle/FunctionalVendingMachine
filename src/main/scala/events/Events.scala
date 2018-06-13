@@ -1,24 +1,12 @@
 package events
 
+import EventSystem.{ErrorEvent, Event, OutputEvent}
 import domain_models._
 import top_layer.Dependencies.CoinHolderDependency
 import utils.{Constants, MoneyUtils}
 
-trait SideEffect extends Event{
-  def run(): Unit
-}
 
-trait OutputEvent extends SideEffect{
-  def run():Unit
-}
 
-trait Event{
-  val name: String = this.getClass.toString
-}
-
-trait ErrorEvent extends Event{
-  def run(): Unit
-}
 
 case object NoItemError extends ErrorEvent {
   override def run(): Unit = println("These are not the items you're looking for.")}

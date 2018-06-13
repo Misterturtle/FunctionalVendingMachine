@@ -36,6 +36,4 @@ class InputHandler {
   }
 
   val inputStream = new BufferedReader(new InputStreamReader(System.in))
-
-
 }

@@ -1,5 +1,6 @@
 package domain_models
 
+import EventSystem.Event
 import Input.TakeItem
 import events._
 import top_layer.Dependencies.TopObject

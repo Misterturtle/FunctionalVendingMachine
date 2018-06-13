@@ -1,0 +1,5 @@
+package EventSystem
+
+trait StoryCharacter {
+
+}

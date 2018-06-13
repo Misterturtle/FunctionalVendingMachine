@@ -1,6 +1,5 @@
 package domain_models
 
-import events.Event
 import utils.Constants
 
 case object CoinHolder {

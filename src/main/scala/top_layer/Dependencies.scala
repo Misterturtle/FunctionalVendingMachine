@@ -1,7 +1,7 @@
 package top_layer
 
+import EventSystem.Event
 import domain_models.{CoinHolder, VendingMachine}
-import events.Event
 
 object Dependencies {
 
