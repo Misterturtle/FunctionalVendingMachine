@@ -2,7 +2,7 @@ import events.{DoubleBar, DoubleFoo, Event, ModifyNode}
 import org.scalatest.{FreeSpec, Matchers}
 import story.Story
 import tree.EventTree
-import tree.nodes.{BarNode, FooNode, Node}
+import tree.nodes.{BarLeaf, FooLeaf, Leaf}
 
 class EventTest extends FreeSpec with Matchers {
 
@@ -12,7 +12,7 @@ class EventTest extends FreeSpec with Matchers {
   }
 
   "Events are single units of execution" in {
-    val node = FooNode(5)
+    val node = FooLeaf(5)
     val event = ModifyNode
 
 
@@ -20,15 +20,15 @@ class EventTest extends FreeSpec with Matchers {
   }
 
   "Events modify a node on the EventTree" in {
-    val node = FooNode(1)
+    val node = FooLeaf(1)
     val event = ModifyNode
 
     event.run(node).something shouldBe 2
   }
 
   "Events can modify multiple types of nodes" in {
-    val fooNode = FooNode(5)
-    val barNode = BarNode(8)
+    val fooNode = FooLeaf(5)
+    val barNode = BarLeaf(8)
 
     val event = ModifyNode
 
@@ -37,13 +37,13 @@ class EventTest extends FreeSpec with Matchers {
   }
 
   "Events can modify the properties of the subclass of the node" in {
-    val fooNode = FooNode(5, "foo")
-    val barNode = BarNode(8, "bar")
+    val fooNode = FooLeaf(5, "foo")
+    val barNode = BarLeaf(8, "bar")
 
     val event = ModifyNode
 
-    event.run(fooNode).asInstanceOf[FooNode].someString shouldBe "foo"
-    event.run(barNode).asInstanceOf[BarNode].someString shouldBe "bar"
+    event.run(fooNode).asInstanceOf[FooLeaf].someString shouldBe "foo"
+    event.run(barNode).asInstanceOf[BarLeaf].someString shouldBe "bar"
   }
 
   "Events are collected in a story" in {

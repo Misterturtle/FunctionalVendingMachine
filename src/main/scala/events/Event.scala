@@ -1,10 +1,10 @@
 package events
 
 import tree.EventTree
-import tree.nodes.Node
+import tree.nodes.Leaf
 
 object Event {
 }
 trait Event {
-  def run(node: Node):Node
+  def run(node: Leaf):Leaf
 }

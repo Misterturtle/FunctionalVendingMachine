@@ -1,13 +1,13 @@
 package events
 
 import tree.EventTree
-import tree.nodes.{BarNode, FooNode, Node}
+import tree.nodes.{BarLeaf, FooLeaf, Leaf}
 
 case object ModifyNode extends Event {
-  override def run(node:Node): Node = {
+  override def run(node:Leaf): Leaf = {
     node match {
-      case fooNode:FooNode => fooNode.copy(something = fooNode.something + 1)
-      case barNode:BarNode => barNode.copy(something = barNode.something + 1)
+      case fooNode:FooLeaf => fooNode.copy(something = fooNode.something + 1)
+      case barNode:BarLeaf => barNode.copy(something = barNode.something + 1)
     }
   }
 }

@@ -1,12 +1,12 @@
 package tree
 
-import tree.nodes.Node
+import tree.nodes.Leaf
 
 object EventTree{
   def apply(): EventTree = new EventTree(Nil)
 }
 
-case class EventTree(nodes:List[Node]) {
+case class EventTree(nodes:List[Leaf]) {
 
   var counter = 0
 

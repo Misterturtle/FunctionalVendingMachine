@@ -1,7 +1,7 @@
 package events
 
-import tree.nodes.Node
+import tree.nodes.Leaf
 
 case object DoubleBar extends Event {
-  override def run(node: Node): Node = ???
+  override def run(node: Leaf): Leaf = ???
 }
