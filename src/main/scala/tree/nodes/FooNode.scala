@@ -1,3 +1,6 @@
 package tree.nodes
 
-case class FooNode(something:Int) extends Node
+case object FooNode{
+  def apply(something:Int): FooNode = FooNode(something, "")
+}
+case class FooNode(something:Int, someString:String) extends Node

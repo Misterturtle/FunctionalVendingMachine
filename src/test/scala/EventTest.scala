@@ -34,4 +34,14 @@ class EventTest extends FreeSpec with Matchers {
     event.run(fooNode).something shouldBe 6
     event.run(barNode).something shouldBe 9
   }
+
+  "Events can modify the properties of the subclass of the node" in {
+    val fooNode = FooNode(5, "foo")
+    val barNode = BarNode(8, "bar")
+
+    val event = ModifyNode
+
+    event.run(fooNode).asInstanceOf[FooNode].someString shouldBe "foo"
+    event.run(barNode).asInstanceOf[BarNode].someString shouldBe "bar"
+  }
 }
