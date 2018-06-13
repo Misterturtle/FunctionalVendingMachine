@@ -1,9 +1,10 @@
 package tree
 
 object EventTree{
-  def apply(): EventTree = new EventTree()
+  def apply(): EventTree = new EventTree(Nil)
 }
-class EventTree() {
+
+case class EventTree(nodes:List[Node]) {
 
   var counter = 0
 
