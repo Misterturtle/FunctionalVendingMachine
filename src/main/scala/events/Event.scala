@@ -6,5 +6,5 @@ import tree.nodes.Leaf
 object Event {
 }
 trait Event {
-  def run(node: Leaf):Leaf
+  def run(leaf: Leaf):Leaf
 }
