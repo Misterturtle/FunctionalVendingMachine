@@ -1,5 +1,0 @@
-package EventSystem
-
-trait StoryCharacter {
-
-}
