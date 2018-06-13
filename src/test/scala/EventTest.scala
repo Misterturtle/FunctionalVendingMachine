@@ -1,5 +1,6 @@
-import events.{Event, ModifyNode}
+import events.{DoubleBar, DoubleFoo, Event, ModifyNode}
 import org.scalatest.{FreeSpec, Matchers}
+import story.Story
 import tree.EventTree
 import tree.nodes.{BarNode, FooNode, Node}
 
@@ -43,5 +44,13 @@ class EventTest extends FreeSpec with Matchers {
 
     event.run(fooNode).asInstanceOf[FooNode].someString shouldBe "foo"
     event.run(barNode).asInstanceOf[BarNode].someString shouldBe "bar"
+  }
+
+  "Events are collected in a story" in {
+    val story = Story()
+      .first(DoubleBar)
+      .andThen(DoubleFoo)
+
+    story.eventLog shouldBe List(DoubleFoo, DoubleBar)
   }
 }
