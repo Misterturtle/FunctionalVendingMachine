@@ -1,6 +1,7 @@
 package tree
 
 import org.scalatest.{FreeSpec, FunSuite, Matchers}
+import tree.nodes.FooNode
 
 class EventTreeTest extends FreeSpec with Matchers {
 
@@ -13,7 +14,7 @@ class EventTreeTest extends FreeSpec with Matchers {
   }
 
   "A tree has nodes" in {
-    val node = Node()
+    val node = FooNode(1)
     val tree = EventTree(List(node))
 
     tree.nodes shouldBe List(node)

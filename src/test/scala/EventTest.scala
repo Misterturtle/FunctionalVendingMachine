@@ -1,6 +1,7 @@
 import events.{Event, ModifyNode}
 import org.scalatest.{FreeSpec, Matchers}
-import tree.{EventTree, Node}
+import tree.EventTree
+import tree.nodes.{BarNode, FooNode, Node}
 
 class EventTest extends FreeSpec with Matchers {
 
@@ -10,7 +11,7 @@ class EventTest extends FreeSpec with Matchers {
   }
 
   "Events are single units of execution" in {
-    val node = Node(5)
+    val node = FooNode(5)
     val event = ModifyNode
 
 
@@ -18,9 +19,19 @@ class EventTest extends FreeSpec with Matchers {
   }
 
   "Events modify a node on the EventTree" in {
-    val node = Node(1)
+    val node = FooNode(1)
     val event = ModifyNode
 
-    event.run(node).something shouldBe Node(2)
+    event.run(node).something shouldBe 2
+  }
+
+  "Events can modify multiple types of nodes" in {
+    val fooNode = FooNode(5)
+    val barNode = BarNode(8)
+
+    val event = ModifyNode
+
+    event.run(fooNode).something shouldBe 6
+    event.run(barNode).something shouldBe 9
   }
 }

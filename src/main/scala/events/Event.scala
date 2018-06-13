@@ -1,6 +1,7 @@
 package events
 
-import tree.{EventTree, Node}
+import tree.EventTree
+import tree.nodes.Node
 
 object Event {
 }

@@ -1,5 +1,7 @@
 package tree
 
+import tree.nodes.Node
+
 object EventTree{
   def apply(): EventTree = new EventTree(Nil)
 }
