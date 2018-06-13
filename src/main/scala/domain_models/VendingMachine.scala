@@ -51,7 +51,7 @@ case object VendingMachine {
       }
 
       def coinHolderMakeChange(): List[Event] = {
-        vendingMachine.coinHolder.makeChange(item) match {
+        vendingMachine.coinHolder.makeChange(item.price) match {
           case Some(coins) => List(ItemSelected(item), CoinHolderMoneyReturned(coins._1, coins._2, coins._3), AcceptCoinHolder)
           case None => coinReturnMakeChange()
         }

@@ -2,56 +2,53 @@ package domain_models
 
 import utils.Constants
 
-case object CoinReturn{
-  val EMPTY = new CoinReturn(0,0,0)
-  val FIVE_EACH = new CoinReturn(5,5,5)
+case object CoinReturn {
+  val EMPTY = new CoinReturn(0, 0, 0)
+  val FIVE_EACH = new CoinReturn(5, 5, 5)
 }
-case class CoinReturn(nickels:Int, dimes:Int, quarters:Int){
-  def makeChange(amountToReturn:BigDecimal): Option[(Int, Int, Int)] = {
-    var _quarters = quarters
-    var _dimes = dimes
-    var _nickels = nickels
 
-    var _returnedNickels = 0
-    var _returnedDimes = 0
-    var _returnedQuarters = 0
+case class CoinReturn(nickels: Int, dimes: Int, quarters: Int) {
+  def makeChange(amountNeeded: BigDecimal): Option[(Int, Int, Int)] = {
 
-    def coinHolderAmount(): BigDecimal = (_quarters * Constants.VALUE_OF_QUARTER) + (_dimes * Constants.VALUE_OF_DIME) + (_nickels * Constants.VALUE_OF_NICKEL)
+    def go(remaining: BigDecimal, coins: (Int, Int, Int) = (0, 0, 0)): (Int, Int, Int) = {
+      import Constants._
 
-    var outOfOptions = false
-    var amountNeeded = amountToReturn
+      val remainingCoins = (this.nickels - coins._1, this.dimes - coins._2, this.quarters - coins._3)
+      val quarterIsValid = remaining >= VALUE_OF_QUARTER && remainingCoins._3 != 0
+      val dimeIsValid = remaining >= VALUE_OF_DIME && remainingCoins._2 != 0
+      val nickelIsValid = remaining >= VALUE_OF_NICKEL && remainingCoins._1 != 0
+      val cannotGiveNickel = remaining == 5 && remainingCoins._1 == 0
+      val isDone = remaining == 0 || cannotGiveNickel
 
-
-    while (amountNeeded != 0 && !outOfOptions) {
-      if (_quarters > 0 && amountNeeded >= 0.25) {
-        _quarters -= 1
-        _returnedQuarters += 1
-        amountNeeded -= Constants.VALUE_OF_QUARTER
-      } else if (_dimes > 0 && amountNeeded >= 0.10) {
-        _dimes -= 1
-        _returnedDimes += 1
-        amountNeeded -= Constants.VALUE_OF_DIME
-      } else if (_nickels > 0 && amountNeeded >= 0.05) {
-        _nickels -= 1
-        _returnedNickels += 1
-        amountNeeded -= Constants.VALUE_OF_NICKEL
-      } else {
-        outOfOptions = true
+      remaining match {
+        case _ if isDone => (coins._1, coins._2, coins._3)
+        case _ if quarterIsValid => go(remaining - VALUE_OF_QUARTER, (coins._1, coins._2, coins._3 + 1))
+        case _ if dimeIsValid => go(remaining - VALUE_OF_DIME, (coins._1, coins._2 + 1, coins._3))
+        case _ if nickelIsValid => go(remaining - VALUE_OF_NICKEL, (coins._1 + 1, coins._2, coins._3))
       }
     }
 
-    if (outOfOptions) {
+    val (nickels, dimes, quarters) = go(amountNeeded)
+
+    if ((nickels, dimes, quarters) == (0, 0, 0)) {
       None
     } else {
-      Some((_returnedNickels, _returnedDimes, _returnedQuarters))
+      Some((nickels, dimes, quarters))
     }
   }
 
+
   def amount = (nickels * 0.05) + (dimes * 0.10) + (quarters * 0.25)
-  def removeNickels(amount:Int) = copy(nickels = nickels - amount)
-  def removeDimes(amount:Int) = copy(dimes = dimes - amount)
-  def removeQuarters(amount:Int) = copy(quarters = quarters - amount)
-  def addNickels(amount:Int) = copy(nickels = nickels + amount)
-  def addDimes(amount:Int) = copy(dimes = dimes + amount)
-  def addQuarters(amount:Int) = copy(quarters = quarters + amount)
+
+  def removeNickels(amount: Int) = copy(nickels = nickels - amount)
+
+  def removeDimes(amount: Int) = copy(dimes = dimes - amount)
+
+  def removeQuarters(amount: Int) = copy(quarters = quarters - amount)
+
+  def addNickels(amount: Int) = copy(nickels = nickels + amount)
+
+  def addDimes(amount: Int) = copy(dimes = dimes + amount)
+
+  def addQuarters(amount: Int) = copy(quarters = quarters + amount)
 }
