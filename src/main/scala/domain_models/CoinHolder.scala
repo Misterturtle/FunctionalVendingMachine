@@ -11,7 +11,7 @@ case object CoinHolder {
 }
 
 case class CoinHolder(nickels: Int, dimes: Int, quarters: Int, coinReturn: CoinReturn) {
-  def addCoinsToCoinReturn(): CoinHolder = copy(coinReturn = coinReturn.copy(nickels = coinReturn.nickels + nickels, dimes = coinReturn.dimes + dimes, quarters = coinReturn.quarters + quarters))
+  def addCoinsToCoinReturn(): CoinHolder = copy(nickels = 0, dimes = 0, quarters = 0, coinReturn = coinReturn.copy(nickels = coinReturn.nickels + nickels, dimes = coinReturn.dimes + dimes, quarters = coinReturn.quarters + quarters))
 
 
   def makeChange(item: Item): Option[(Int, Int, Int)] = {

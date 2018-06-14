@@ -44,6 +44,18 @@ class CoinHolderTests extends FreeSpec with Matchers {
     result.coinHolder.dimes shouldBe 3
   }
 
+  "Given enough money, when item is selected, then subtract items value" in {
+    val s1 = Story()
+      .first(insertCoin(Quarter))
+      .andThen(insertCoin(Quarter))
+      .andThen(selectItem(Chips))
+
+    val result = Story.runStory(s1, emptyVM)
+
+    result.coinHolder.quarters shouldBe 0
+    result.coinHolder.coinReturn.quarters shouldBe 2
+  }
+
   "Given $0.50 has been inserted, returning coins removes the amount from the coinHolder" in {
     val s1 = Story()
       .first(insertCoin(Quarter))

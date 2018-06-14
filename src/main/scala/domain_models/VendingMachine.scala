@@ -61,7 +61,7 @@ case object VendingMachine {
         if (isStocked) {
           coinHolderAmount match {
             case _ if coinHolderAmount > price => coinHolderMakeChange()
-            case _ if coinHolderAmount == price => List(ItemSelected(item))
+            case _ if coinHolderAmount == price => List(ItemSelected(item), AcceptCoinHolder)
             case _ if coinHolderAmount < price => List(InvalidAmount(item))
           }
         } else {
