@@ -83,7 +83,6 @@ class StoryTest extends FreeSpec with Matchers {
 
     leaf.something shouldBe 2
   }
-
 }
 
 

@@ -5,6 +5,7 @@ import tree.nodes.Leaf
 
 object Event {
 }
-trait Event {
-  def run(leaf: Leaf):Leaf
+
+trait Event[T <: Leaf] {
+  def run(leaf: T):T
 }

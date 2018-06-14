@@ -1,10 +1,28 @@
-import events.{DoubleBar, DoubleFoo, Event, ModifyNode}
+package event
+
+import events.Event
 import org.scalatest.{FreeSpec, Matchers}
 import story.Story
-import tree.EventTree
 import tree.nodes.{BarLeaf, FooLeaf, Leaf}
 
 class EventTest extends FreeSpec with Matchers {
+
+  case class BarLeaf() extends Leaf {
+    def increaseSomethingBy100 = something += 100
+    override var something: Int = 0
+  }
+
+  case class BarLeaf() extends Leaf {
+    def increaseSomethingBy100 = something += 100
+    override var something: Int = 0
+  }
+
+  case class ModifyNode() extends Event[BarLeaf] with Event[FooLeaf] {
+    override def run(leaf: BarLeaf): BarLeaf = {
+      leaf.something += 1
+      leaf
+    }
+  }
 
   "I want an event" in {
     val event = ModifyNode
@@ -36,7 +54,7 @@ class EventTest extends FreeSpec with Matchers {
     event.run(barNode).something shouldBe 9
   }
 
-  "Events can modify the properties of the subclass of the node" in {
+  "Events can modify the properties of the subclass of the node without brute force" in {
     val fooNode = FooLeaf(5, "foo")
     val barNode = BarLeaf(8, "bar")
 
@@ -53,4 +71,9 @@ class EventTest extends FreeSpec with Matchers {
 
     story.eventLog shouldBe List(DoubleFoo, DoubleBar)
   }
-}
+
+  "Events can define a generic Leaf that is used for the run function" in {
+
+  }
+    override var something: Int = _
+  }
